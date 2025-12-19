@@ -6,9 +6,9 @@
     "node": ">=20.0.0"
   },
   "scripts": {
-    "dev": "NODE_OPTIONS=--openssl-legacy-provider && next dev",
-    "build": "NODE_OPTIONS=--openssl-legacy-provider && next build",
-    "start": "NODE_OPTIONS=--openssl-legacy-provider && next start"
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider next dev",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider next build",
+    "start": "NODE_OPTIONS=--openssl-legacy-provider next start"
   },
   "dependencies": {
     "@emotion/css": "^11.7.1",
