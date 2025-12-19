@@ -7,8 +7,8 @@ function usePairInfo() {
   const [pairs, setPairs] = useState({});
 
   useEffect(async () => {
-    const result = (await axios.get("https://api.vexchange.io/v1/pairs")).data;
-    setPairs(result);
+    // const result = (await axios.get("https://api.vexchange.io/v1/pairs")).data;
+    // setPairs(result);
   }, []);
 
   return {

@@ -23,7 +23,7 @@ const vex_wvet = {
 // Declare constants by network
 const VEX_CONSTANTS = {
   mainnet: {
-    node_url: "https://mainnet.veblocks.net",
+    node_url: "https://mainnetc1.vechain.network",
     explorer_base_url: "https://explore.vechain.org/",
     governor_alpha: {
       name: "Governor",
@@ -377,6 +377,30 @@ const VEX_ACTIONS = [
       }
     ]
   },
+  {
+    contract: "VEX-WVET LP Token",
+    address: VEX_NETWORK.vex_wvet.address,
+    functions: [
+      {
+        name: "Transfer",
+        signature: "transfer(address,uint256)",
+        args: [
+          {
+            name: "recipient",
+            placeholder: "address",
+            type: "text",
+          },
+          {
+            name: "amount",
+            placeholder: "value",
+            type: "number",
+            decimals: 18
+          },
+        ],
+        values: [],
+      },
+    ],
+  }
 ];
 
 /**
